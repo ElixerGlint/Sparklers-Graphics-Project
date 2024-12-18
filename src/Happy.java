@@ -17,7 +17,7 @@ public class Happy {
 		int shade = 0;
 		frame.setVisible(true);int delta = 1;
 		while(true) {
-			bgColor = new Color(shade,shade,0);
+			bgColor = new Color(0,0,shade);
 			MMXXV.setBg(bgColor);
 			Thread.sleep(20);
 			shade+=delta;
