@@ -14,6 +14,13 @@ public class NewYear extends JPanel {
 			sparkles[i] = new Sparkler(i*50,700,i);
 		}
 	}
+
+	public void changey(int Ychoord) {
+		for(Sparkler s: sparkles) {
+			s.setY(Ychoord);
+		}
+	}
+
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		this.setBackground(bg);
